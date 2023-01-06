@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Unturned Skin changer</title>
+    <link rel="stylesheet" href="index.css" />
+ 
+  </head>
+  <body>
+    <div class="login-box">
+      <h1> Unturned Skin Changer</h1>
+      <div class="group">
+        <form id="myForm">
+          <div class="user-box">
+            <input type="text" id="name" name="name" required><br>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label for="name">Your Skin Name:  Example: Purple Hell's Fury</label><br>
+          </div>
+          <div class="user-box">
+            <input type="text" id="skinID" name="skinID" required><br>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label for="skinID">Desired skin:   Example: Steampunk Hell's Fury</label><br>
+          </div>
+            <input type="submit" value="Submit" class="submit"> <br>
+          </div>
+        
+        
+        </form> 
+      <p id="success" class="success"></p>
+      <div class="user-box" style="width: 80%; margin-top: 170px ;">
+        <input type="text" id="path" name="path" class="path" required><br>
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label for="skinID">Path to EconInfo.json   Example: steam/unturned/EconInfo.json</label><br>
+      </div>
+    </div>
+    </div>
+    
+    
+  </body>
+  
+</html>
+<script src="https://cdn.jsdelivr.net/npm/node-fs@0.1.2/lib/fs.min.js" async></script>
+<script src="app.js"></script>
